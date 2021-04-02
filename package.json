@@ -7,15 +7,15 @@
         "contracts"
     ],
     "scripts": {
-        "test:local": "truffle test --network test",
-        "test:docker": "echo TODO!",
-        "lint:js": "eslint *.js .",
-        "lint:sol": "solium -d contracts",
-        "lint": "npm run lint:sol && npm run lint:js",
-        "security": "docker run --rm --memory=3g -v $(pwd):/tmp -w \"/tmp/\" mythril/myth --truffle",
-        "describe": "surya describe contracts/*.sol",
-        "coverage": "solidity-coverage"
-    },
+            "test:local": "truffle test --network test",
+            "test:docker": "echo TODO!",
+            "lint:js": "eslint *.js .",
+            "lint:sol": "solium -d contracts",
+            "lint": "npm run lint:sol && npm run lint:js",
+            "security": "docker run --rm --memory=3g -v $(pwd):/tmp -w \"/tmp/\" mythril/myth --truffle",
+            "describe": "surya describe contracts/*.sol",
+            "coverage": "solidity-coverage"
+        },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/cementdao/fixidity.git"
@@ -31,6 +31,15 @@
     },
     "homepage": "https://github.com/cementdao/fixidity#readme",
     "dependencies": {
+        "@ethersproject/solidity": "^5.0.9",
+        "@harmony-js/core": "^0.1.56",
+        "@harmony-js/utils": "^0.1.56",
+        "@openzeppelin/contracts": "^3.4.0",
+        "@openzeppelin/test-helpers": "^0.5.6",
+        "dotenv": "^8.2.0",
+        "truffle": "^5.1.58",
+        "truffle-flattener": "^1.4.4",
+        "tslib": "^2.1.0",
         "bignumber.js": "8.1.1"
     },
     "devDependencies": {
@@ -47,7 +56,5 @@
         "solc": "^0.5.7",
         "solidity-coverage": "0.6.0-beta.4",
         "surya": "0.2.8",
-        "truffle": "5.0.13",
-        "truffle-hdwallet-provider": "^1.0.7"
     }
 }

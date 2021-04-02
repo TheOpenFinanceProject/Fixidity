@@ -1,5 +1,20 @@
 # FixidityLib
-An overflow-protected fixed-point arithmetic library for Solidity.
+An overflow-protected fixed-point arithmetic library for Solidity Ported over To Harmony.
+
+
+
+#### List of deployed contracts
+
+| Contract         | Testnet                                     | Mainnet     |
+| -----------      | --------------------------------------------| ----------- |
+| FixidityLib      | 0x6360B3f65bf4450c4792BD6b932be2242A5Ff5A4  | 0x9D5CDA3BD3B5C47b66C4007feA8cE1dCeB727327  |
+| LogarithmLib     | 0xe3Cd3F3A1bC931Af30D87675559D94F74ED9B2D0  | 0x3CecC80FDB06c75d1CBD3E58a1e0d182eD4dba97  |
+| FixidityLibMock  | 0xbDCb50bF4Cec9618Cee234aFFBc7A5d90293E0C1  | 0x90DF0c7fC129E27AED7169Aa77800DECfEd0CB55  |
+| LogarithmLibMock | 0x18BE047d535D3a3b1de23B2fA7Ed95ab14c3CFec  | 0x336487d91876170217a8785E426D4ba474554526  |
+
+
+
+
 
 ## Introduction
 FixidityLib provide fixed point arithmetic for Solidity. This is achieved by
